@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24e7b83f-57d5-47ae-b309-69097f0b2c18" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/OpenCharts/BaseTypes/Point.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/OpenCharts/RenderEnginer.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/OpenCharts/Style.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/OpenCharts/TextStyle.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/examples/index.html" afterPath="$PROJECT_DIR$/examples/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/OpenCharts.js" afterPath="$PROJECT_DIR$/lib/OpenCharts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/OpenCharts/Charts.js" afterPath="$PROJECT_DIR$/lib/OpenCharts/Charts.js" />
     </list>
     <ignored path="OpenCharts.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -52,7 +45,7 @@
       <file leaf-file-name="Charts.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/OpenCharts/Charts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="28" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.7354651">
+            <state line="57" column="22" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.622093">
               <folding />
             </state>
           </provider>
@@ -291,7 +284,11 @@
       <created>1345541746579</created>
       <updated>1345541746579</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="添加文字，标题，文字风格类">
+      <created>1345712360196</created>
+      <updated>1345712360196</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers>
       <GitHub shared="false">
         <commitMessageFormat>{id} {summary}</commitMessageFormat>
@@ -310,6 +307,7 @@
     <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -324,7 +322,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -367,7 +364,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="工程更改" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加文字，标题，文字风格类" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -383,6 +380,7 @@
     <MESSAGE value="modify read me&#10;修改" />
     <MESSAGE value="增加类的实现&#10;Charts基类&#10;范例测试内容" />
     <MESSAGE value="工程更改" />
+    <MESSAGE value="添加文字，标题，文字风格类" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -449,7 +447,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/OpenCharts/Charts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="28" selection-start="1691" selection-end="1691" vertical-scroll-proportion="0.7354651">
+        <state line="57" column="22" selection-start="1654" selection-end="1654" vertical-scroll-proportion="0.622093">
           <folding />
         </state>
       </provider>
