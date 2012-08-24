@@ -4,7 +4,7 @@
     <script type="text/javascript">
         function init()
         {
-            var charts = new OpenCharts.Chart("canvas");
+            var charts = new OpenCharts.Chart.AxesChart("canvas");
             //charts.title = "Hello World";
             //charts.titleStyle.fColor = "#000";
 
@@ -25,9 +25,8 @@
 
             charts.addItems(items);
 
-            alert(charts.getMaxValue());
-
             charts.render();
+            charts.renderAxes();
         }
     </script>
 </head>
