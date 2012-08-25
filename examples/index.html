@@ -1,10 +1,10 @@
-<html>
+﻿<html>
 <head>
     <script type="text/javascript" src="../lib/OpenCharts.js"></script>
     <script type="text/javascript">
         function init()
         {
-            var charts = new OpenCharts.Chart.AxesChart("canvas");
+            var charts = new OpenCharts.Chart.AreaChart("canvas");
             //charts.title = "Hello World";
             //charts.titleStyle.fColor = "#000";
 
@@ -12,21 +12,22 @@
             var style = new OpenCharts.Style();
             style.fillStyle = "#F00";
 
-            items.push({strCaption : '成都',data : 0,itemStyle:'#000'});
-            items.push(new OpenCharts.Item(1,"1",style));
-            items.push(new OpenCharts.Item(2,"2","#020"));
-            items.push(new OpenCharts.Item(3,"3","#030"));
-            items.push(new OpenCharts.Item(4,"4","#040"));
-            items.push(new OpenCharts.Item(5,"5","#050"));
-            items.push(new OpenCharts.Item(6,"6","#060"));
-            items.push(new OpenCharts.Item(7,"7","#070"));
-            items.push(new OpenCharts.Item(8,"8","#080"));
-            items.push(new OpenCharts.Item(9,"9","#090"));
+            items.push({strCaption : '一月',data : 2,itemStyle:'#00FFFF'});
+            items.push(new OpenCharts.Item(12,"二月",style));
+            items.push(new OpenCharts.Item(14,"三月","#020"));
+            items.push(new OpenCharts.Item(20,"四月","#030"));
+            items.push(new OpenCharts.Item(28,"五月","#040"));
+            items.push(new OpenCharts.Item(32,"六月","#050"));
+            items.push(new OpenCharts.Item(34,"七月","#060"));
+            items.push(new OpenCharts.Item(36,"八月","#070"));
+            items.push(new OpenCharts.Item(33,"九月","#080"));
+            items.push(new OpenCharts.Item(24,"十月","#090"));
+            items.push(new OpenCharts.Item(14,"十一月","#090"));
+            items.push(new OpenCharts.Item(4,"十二月","#090"));
 
             charts.addItems(items);
 
             charts.render();
-            charts.renderAxes();
         }
     </script>
 </head>
