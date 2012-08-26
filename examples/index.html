@@ -2,9 +2,13 @@
 <head>
     <script type="text/javascript" src="../lib/OpenCharts.js"></script>
     <script type="text/javascript">
+        var charts;
         function init()
         {
-            var charts = new OpenCharts.Chart.AreaChart("canvas");
+            var myCanvas = document.getElementById("canvas");
+            var myContext =  myCanvas.getContext("2d");
+            myCanvas.addEventListener("mousedown",OnMouseDown,false);
+            charts = new OpenCharts.Chart.AreaChart("canvas");
             //charts.title = "Hello World";
             //charts.titleStyle.fColor = "#000";
 
@@ -28,6 +32,14 @@
             charts.addItems(items);
 
             charts.render();
+        }
+
+        function OnMouseDown(evt)
+        {
+
+            var mouseX=evt.layerX;
+            var mouseY=evt.layerY;
+            var items = charts.getItemByPosition(mouseX,mouseY);
         }
     </script>
 </head>
