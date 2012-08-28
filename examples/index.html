@@ -8,7 +8,7 @@
             var myCanvas = document.getElementById("canvas");
             var myContext =  myCanvas.getContext("2d");
             //myCanvas.addEventListener("mousedown",OnMouseDown,false);
-            charts = new OpenCharts.Chart.AreaChart("canvas");
+            charts = new OpenCharts.Chart.PointChart("canvas");
             charts.strTitle = "Hello World";
             //charts.titleStyle.fColor = "#000";
 
@@ -18,16 +18,16 @@
 
             items.push({strCaption : '一月',data : 2,itemStyle:'#00FFFF'});
             items.push(new OpenCharts.Item(12,"二月",style));
-            items.push(new OpenCharts.Item(14,"三月","#020"));
-            items.push(new OpenCharts.Item(20,"四月","#030"));
-            items.push(new OpenCharts.Item(28,"五月","#040"));
-            items.push(new OpenCharts.Item(32,"六月","#050"));
-            items.push(new OpenCharts.Item(34,"七月","#060"));
-            items.push(new OpenCharts.Item(36,"八月","#070"));
-            items.push(new OpenCharts.Item(33,"九月","#080"));
-            items.push(new OpenCharts.Item(24,"十月","#090"));
-            items.push(new OpenCharts.Item(14,"十一月","#090"));
-            items.push(new OpenCharts.Item(4,"十二月","#090"));
+            items.push(new OpenCharts.Item(14,"三月","#0F0"));
+            items.push(new OpenCharts.Item(20,"四月","#00F"));
+            items.push(new OpenCharts.Item(28,"五月","#FF0"));
+            items.push(new OpenCharts.Item(32,"六月","#0FF"));
+            items.push(new OpenCharts.Item(34,"七月","#FFF"));
+            items.push(new OpenCharts.Item(36,"八月","#F0F"));
+            items.push(new OpenCharts.Item(33,"九月","#888"));
+            items.push(new OpenCharts.Item(24,"十月","#800"));
+            items.push(new OpenCharts.Item(14,"十一月","#080"));
+            items.push(new OpenCharts.Item(4,"十二月","#008"));
 
             charts.addItems(items);
             charts.addEventListener("mousedown","test");
