@@ -1,18 +1,12 @@
 ﻿<html>
 <head>
     <script type="text/javascript" src="../lib/OpenCharts.js"></script>
+    <link rel="stylesheet" href="../theme/default/style.css" type="text/css">
     <script type="text/javascript">
-        var charts;
+        var charts,charts1,charts2,charts3;
         function init()
         {
-            var myCanvas = document.getElementById("canvas");
-            var myContext =  myCanvas.getContext("2d");
-            //myCanvas.addEventListener("mousedown",OnMouseDown,false);
-            charts = new OpenCharts.Chart.PointChart("canvas");
-            charts.strTitle = "Hello World";
-            //charts.titleStyle.fColor = "#000";
-
-            var items = [];
+            var items = [],items1 = [],items2 = [],items3 = [];
             var style = new OpenCharts.Style();
             style.fillStyle = "#F00";
 
@@ -29,44 +23,115 @@
             items.push(new OpenCharts.Item(14,"十一月","#080"));
             items.push(new OpenCharts.Item(4,"十二月","#008"));
 
-            charts.addItems(items);
-            charts.addEventListener("mousedown","test");
+            var itemss = [];
+            itemss.push({data : 4,itemStyle:'#dad81f'});
+            itemss.push({data : 16});
+            itemss.push({data : 18});
+            itemss.push({data : 20});
+            itemss.push({data : 32});
+            itemss.push({data : 36});
+            itemss.push({data : 38});
+            itemss.push({data : 38});
+            itemss.push({data : 36});
+            itemss.push({data : 26});
+            itemss.push({data : 20});
+            itemss.push({data : 14});
 
-            /*
-            var msgObj=document.createElement("div")
-            msgObj.setAttribute("id","msgDiv");
-            msgObj.setAttribute("align","center");
-            msgObj.style.background="white";
-            msgObj.style.border="1px solid " + "#000";
-            msgObj.style.position = "absolute";
-            msgObj.style.left = "50%";
-            msgObj.style.top = "50%";
-            msgObj.style.font="12px/1.6em Verdana, Geneva, Arial, Helvetica, sans-serif";
-            msgObj.style.marginLeft = "-225px" ;
-            msgObj.style.marginTop = -75+document.documentElement.scrollTop+"px";
-            msgObj.style.width = 100 + "px";
-            msgObj.style.height =600 + "px";
-            msgObj.style.textAlign = "center";
-            msgObj.style.lineHeight ="25px";
-            msgObj.style.zIndex = "10001";
-            msgObj.style.position = "absolute";
-            msgObj.innerHTML = "d"
-            document.body.appendChild(msgObj);
-            */
+            var itemsss = [];
+            itemsss.push({data : 1,itemStyle:'#76a871'});
+            itemsss.push({data : 12});
+            itemsss.push({data : 18});
+            itemsss.push({data : 20});
+            itemsss.push({data : 28});
+            itemsss.push({data : 34});
+            itemsss.push({data : 36});
+            itemsss.push({data : 34});
+            itemsss.push({data : 31});
+            itemsss.push({data : 27});
+            itemsss.push({data : 24});
+            itemsss.push({data : 6});
+
+            //myCanvas.addEventListener("mousedown",OnMouseDown,false);
+            charts = new OpenCharts.Chart.LineChart("canvas",{smooth:true});
+            charts.strTitle = "Hello World";
+            charts.smooth = true;
+            //charts.titleStyle.fColor = "#000";
+
+            var message = "${itemName}${itemCaption}的气温是${itemData}C";
+            charts.addItems(items,"北京");
+            charts.addItems(itemss,"上海");
+            charts.addItems(itemsss,"西安");
+            charts.addEventListener("mousemove",message);
+
+            //myCanvas.addEventListener("mousedown",OnMouseDown,false);
+            charts1 = new OpenCharts.Chart.AreaChart("canvas1");
+            charts1.strTitle = "Hello OpenCharts";
+
+            items1.push({strCaption : '一月',data : 2,itemStyle:'#F00'});
+            items1.push(new OpenCharts.Item(12,"二月",style));
+            items1.push(new OpenCharts.Item(14,"三月","#0F0"));
+            items1.push(new OpenCharts.Item(20,"四月","#00F"));
+            items1.push(new OpenCharts.Item(28,"五月","#FF0"));
+            items1.push(new OpenCharts.Item(32,"六月","#0FF"));
+            items1.push(new OpenCharts.Item(34,"七月","#FFF"));
+            items1.push(new OpenCharts.Item(36,"八月","#F0F"));
+            items1.push(new OpenCharts.Item(33,"九月","#888"));
+            items1.push(new OpenCharts.Item(24,"十月","#800"));
+            items1.push(new OpenCharts.Item(14,"十一月","#080"));
+            items1.push(new OpenCharts.Item(4,"十二月","#008"));
+            charts1.addItems(items1,"北京");
+            charts1.addItems(itemss,"上海");
+            charts1.addItems(itemsss,"西安");
+            charts1.addEventListener("mousedown",message);
+
+            items2.push({strCaption : '一月',data : 2,itemStyle:'#0F0'});
+            items2.push(new OpenCharts.Item(12,"二月",style));
+            items2.push(new OpenCharts.Item(14,"三月","#0F0"));
+            items2.push(new OpenCharts.Item(20,"四月","#00F"));
+            items2.push(new OpenCharts.Item(28,"五月","#FF0"));
+            items2.push(new OpenCharts.Item(32,"六月","#0FF"));
+            items2.push(new OpenCharts.Item(34,"七月","#FFF"));
+            items2.push(new OpenCharts.Item(36,"八月","#F0F"));
+            items2.push(new OpenCharts.Item(33,"九月","#888"));
+            items2.push(new OpenCharts.Item(24,"十月","#800"));
+            items2.push(new OpenCharts.Item(14,"十一月","#080"));
+            items2.push(new OpenCharts.Item(4,"十二月","#008"));
+            charts2 = new OpenCharts.Chart.LineChart("canvas2");
+            charts2.strTitle = "Hello Sunday";
+
+            charts2.addItems(items2,"北京");
+            charts2.addItems(itemss,"上海");
+            charts2.addItems(itemsss,"西安");
+            charts2.addEventListener("mousedown",message);
+
+            charts3 = new OpenCharts.Chart.PointChart("canvas3");
+            charts3.strTitle = "Hello My Github";
+
+            charts3.addItems(items,"北京");
+            charts3.addItems(itemss,"上海");
+            charts3.addItems(itemsss,"西安");
+            charts3.addEventListener("mousedown",message);
 
             charts.render();
-        }
-
-        function OnMouseDown(evt)
-        {
-            var mouseX=evt.layerX;
-            var mouseY=evt.layerY;
-            var items = charts.getItemByPosition(mouseX,mouseY);
+            charts1.render();
+            charts2.render();
+            charts3.render();
         }
     </script>
 </head>
 <body onload="init()">
-<canvas id="canvas" height="500px" width="1024px">
-</canvas>
+<div style="left:0px;top:0px;position: absolute;">
+    <canvas id="canvas" height="300px" width="500px"  />
+</div>
+<div style="left:0px;top:330px;position: absolute;">
+    <canvas id="canvas1" height="300px" width="500px"  />
+</div>
+<div style="left:550px;top:0px;position: absolute;">
+    <canvas id="canvas2" height="300px" width="500px" left="550px" top="0xp" />
+</div>
+
+<div style="left:0550px;top:330px;position: absolute;">
+    <canvas id="canvas3" height="300px" width="500px" left="550px" top="330xp" position="absolute" />
+</div>
 </body>
 </html>
