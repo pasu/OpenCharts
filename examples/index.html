@@ -16,7 +16,7 @@
             items.push(new OpenCharts.Item(20,"四月","#00F"));
             items.push(new OpenCharts.Item(28,"五月","#FF0"));
             items.push(new OpenCharts.Item(32,"六月","#0FF"));
-            items.push(new OpenCharts.Item(34,"七月","#FFF"));
+            items.push(new OpenCharts.Item(34,"七月","#FF8"));
             items.push(new OpenCharts.Item(36,"八月","#F0F"));
             items.push(new OpenCharts.Item(33,"九月","#888"));
             items.push(new OpenCharts.Item(24,"十月","#800"));
@@ -52,16 +52,18 @@
             itemsss.push({data : 6});
 
             //myCanvas.addEventListener("mousedown",OnMouseDown,false);
-            charts = new OpenCharts.Chart.LineChart("canvas",{smooth:true});
+            charts = new OpenCharts.Chart.PieChart("canvas",{smooth:true});
             charts.strTitle = "Hello World";
             charts.smooth = true;
             //charts.titleStyle.fColor = "#000";
 
             var message = "${itemName}${itemCaption}的气温是${itemData}C";
             charts.addItems(items,"北京");
-            charts.addItems(itemss,"上海");
-            charts.addItems(itemsss,"西安");
-            charts.addEventListener("mousemove",message);
+            //charts.addItems(itemss,"上海");
+            //charts.addItems(itemsss,"西安");
+            charts.addEventListener("mousedown",message);
+            //charts.addEventListener("mousemove",message);
+
 
             //myCanvas.addEventListener("mousedown",OnMouseDown,false);
             charts1 = new OpenCharts.Chart.AreaChart("canvas1");
@@ -99,17 +101,17 @@
             charts2 = new OpenCharts.Chart.LineChart("canvas2");
             charts2.strTitle = "Hello Sunday";
 
-            charts2.addItems(items2,"北京");
+            charts2.addItems(items,"北京");
             charts2.addItems(itemss,"上海");
             charts2.addItems(itemsss,"西安");
             charts2.addEventListener("mousedown",message);
 
-            charts3 = new OpenCharts.Chart.PointChart("canvas3");
+            charts3 = new OpenCharts.Chart.BarChart("canvas3");
             charts3.strTitle = "Hello My Github";
 
             charts3.addItems(items,"北京");
-            charts3.addItems(itemss,"上海");
-            charts3.addItems(itemsss,"西安");
+            //charts3.addItems(itemss,"上海");
+            //charts3.addItems(itemsss,"西安");
             charts3.addEventListener("mousedown",message);
 
             charts.render();
