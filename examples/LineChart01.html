@@ -1,0 +1,48 @@
+﻿<html>
+<head>
+    <script type="text/javascript" src="../OpenCharts-min.js"></script>
+    <link rel="stylesheet" href="../theme/default/style.css" type="text/css">
+    <script type="text/javascript">
+        function init()
+        {
+            var items = [],items1 = [],items2 = [],items3 = [];
+            var style = new OpenCharts.Style();
+            style.fillStyle = "#F00";
+
+            items.push({strCaption : '上海',data : 11461.39,itemStyle:'#C0FFFF'});
+            items.push(new OpenCharts.Item(33444.79,"北京",style));
+            items.push(new OpenCharts.Item(3261.26,"四川","#FFC000"));
+            items.push(new OpenCharts.Item(2448.86,"山西","#FFFF00"));
+            items.push(new OpenCharts.Item(1392.13,"天津","#92D050"));
+            items.push(new OpenCharts.Item(3092.94,"山东","#00B050"));
+            items.push(new OpenCharts.Item(13113.26,"广东","#00B0F0"));
+            items.push(new OpenCharts.Item(3631.0,"江苏","#0070C0"));
+            items.push(new OpenCharts.Item(1882.03,"湖北","#002060"));
+            items.push(new OpenCharts.Item(3606.78,"浙江","#7030A0"));
+            items.push(new OpenCharts.Item(1485.74,"辽宁","#C0504D"));
+            items.push(new OpenCharts.Item(1673.03,"河南","#F79646"));
+
+            charts = new OpenCharts.Chart.BarChart("canvas",{smooth:true});
+            charts.strTitle = "各省市上市公司总市值";
+
+            var message = "${itemName}${itemCaption}的上市公司总市值为${itemData}(亿)";
+            charts.addItems(items,"");
+            charts.addEventListener("mousedown",message);
+            //charts.addEventListener("mousemove",message);
+
+            charts.render();
+        }
+    </script>
+</head>
+<body onload="init()">
+<div style="left:0px;top:0px;">
+    <canvas id="canvas" height="600px" width="800px"  />
+</div>
+<div style="left:850px;top:10px;position: absolute;font-family: Yahei;font-size:small; text-align: left;color: #002060;">
+    <h1 style="font-weight:bold;">说明：</h1>
+    这是一个柱状图例子，该例子展示了全国各省上市公司总市值的关系，用户可以展现柱状图内容，之外可以支持图例，鼠标响应等基本功能。
+    <h1 style="font-weight:bold;">备注：</h1>
+    该数据取自地图汇，具有一定参考价值
+</div>
+</body>
+</html>

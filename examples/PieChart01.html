@@ -1,0 +1,68 @@
+﻿<html>
+<head>
+    //<script type="text/javascript" src="../lib/OpenCharts.js"></script>
+    <script type="text/javascript" src="../OpenCharts-min.js"></script>
+    <link rel="stylesheet" href="../theme/default/style.css" type="text/css">
+    <script type="text/javascript">
+        function init()
+        {
+            var items = [],items1 = [],items2 = [],items3 = [];
+            var style = new OpenCharts.Style();
+            style.fillStyle = "#F00";
+
+            items.push({strCaption : '上海',data : 38.0,itemStyle:'#C0FFFF'});
+            items.push(new OpenCharts.Item(9.0,"云南",style));
+            items.push(new OpenCharts.Item(9.0,"内蒙古","#FFC000"));
+            items.push(new OpenCharts.Item(22,"北京","#FFFF00"));
+            items.push(new OpenCharts.Item(6,"吉林","#92D050"));
+            items.push(new OpenCharts.Item(20,"四川","#00B050"));
+            items.push(new OpenCharts.Item(20,"天津","#00B0F0"));
+            items.push(new OpenCharts.Item(0,"宁夏","#0070C0"));
+            items.push(new OpenCharts.Item(6,"安徽","#002060"));
+            items.push(new OpenCharts.Item(47,"山东","#7030A0"));
+            items.push(new OpenCharts.Item(7,"山西","#C0504D"));
+            items.push(new OpenCharts.Item(49,"广东","#9932CC"));
+            items.push(new OpenCharts.Item(7,"广西","#FBF5E6"));
+            items.push(new OpenCharts.Item(3,"新疆","#F6F9ED"));
+            items.push(new OpenCharts.Item(27,"江苏","#EE1289"));
+            items.push(new OpenCharts.Item(10,"黑龙江","#EEC900"));
+            items.push(new OpenCharts.Item(0,"江西","#EBECE4"));
+            items.push(new OpenCharts.Item(0,"河北","#ECF1EF"));
+            items.push(new OpenCharts.Item(8,"河南","#FCF6CF"));
+            items.push(new OpenCharts.Item(21,"浙江","#8B6914"));
+            items.push(new OpenCharts.Item(0,"海南","#FEF6E4"));
+            items.push(new OpenCharts.Item(8,"湖北","#FCF8DC"));
+            items.push(new OpenCharts.Item(11,"湖南","#458B74"));
+            items.push(new OpenCharts.Item(20,"福建","#838B8B"));
+            items.push(new OpenCharts.Item(0,"西藏","#0000CD"));
+            items.push(new OpenCharts.Item(3,"贵州","#0000CD"));
+            items.push(new OpenCharts.Item(39,"辽宁","#FF4040"));
+            items.push(new OpenCharts.Item(2,"重庆","#CD3333"));
+            items.push(new OpenCharts.Item(4,"陕西","#8B2323"));
+            items.push(new OpenCharts.Item(0,"青海","#7FFF00"));
+            items.push(new OpenCharts.Item(0,"甘肃","#53868B"));
+
+            charts = new OpenCharts.Chart.PieChart("canvas");
+            charts.strTitle = "伦敦奥运会各省市参赛选手";
+
+            var message = "${itemName}${itemCaption}省参赛选手人数为${itemData}人";
+            charts.addItems(items,"伦敦奥运会");
+            charts.addEventListener("mousedown",message);
+            //charts.addEventListener("mousemove",message);
+
+            charts.render();
+        }
+    </script>
+</head>
+<body onload="init()">
+<div style="left:0px;top:0px;">
+    <canvas id="canvas" height="600px" width="800px"  />
+</div>
+<div style="left:850px;top:10px;position: absolute;font-family: Yahei;font-size:small; text-align: left;color: #002060;">
+    <h1 style="font-weight:bold;">说明：</h1>
+           这是一个饼状图例子，该例子展示了伦敦奥运会各省市参赛选手的比例关系，用户可以展现饼图内容，之外可以支持图例，鼠标响应等基本功能。
+    <h1 style="font-weight:bold;">备注：</h1>
+    该数据取自地图汇，具有一定参考价值
+</div>
+</body>
+</html>
