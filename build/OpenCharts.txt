@@ -1,0 +1,3 @@
+..\lib\OpenCharts\SingleFile.js
+..\lib\OpenCharts\BaseTypes\Class.js
+..\lib\OpenCharts\Util.js
