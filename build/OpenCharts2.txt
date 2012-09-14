@@ -16,4 +16,5 @@
 ..\lib\OpenCharts\Chart\LineChart.js
 ..\lib\OpenCharts\Chart\PointChart.js
 ..\lib\OpenCharts\Chart\BarChart.js
+..\lib\OpenCharts\Chart\BarExChart.js
 ..\lib\OpenCharts\Chart\PieChart.js

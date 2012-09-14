@@ -9,7 +9,7 @@
             var style = new OpenCharts.Style();
             style.fillStyle = "#F00";
 
-            items.push({strCaption : '上海',data : 11461.39,itemStyle:'#002060'});
+            items.push({strCaption : '上海',data : 11461.39,itemStyle:'#C0FFFF'});
             items.push(new OpenCharts.Item(33444.79,"北京",style));
             items.push(new OpenCharts.Item(3261.26,"四川","#FFC000"));
             items.push(new OpenCharts.Item(2448.86,"山西","#FFFF00"));
@@ -22,7 +22,7 @@
             items.push(new OpenCharts.Item(1485.74,"辽宁","#C0504D"));
             items.push(new OpenCharts.Item(1673.03,"河南","#F79646"));
 
-            charts = new OpenCharts.Chart.LineChart("canvas");
+            charts = new OpenCharts.Chart.BarChart("canvas");
             charts.strTitle = "各省市上市公司总市值";
             charts.showLegend(false);
 
