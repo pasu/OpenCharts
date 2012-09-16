@@ -4,7 +4,7 @@
 	<script type="text/javascript" src="../OpenCharts-min.js"></script>
     <link rel="stylesheet" href="../theme/default/style.css" type="text/css">
     <script type="text/javascript">
-        var charts,charts1,charts2,charts3;
+        var charts,charts1,charts2,charts3,charts4 ;
         function init()
         {
             var items = [],items1 = [],items2 = [],items3 = [];
@@ -82,20 +82,49 @@
             charts2.addItems(itemss,"上海");
             charts2.addItems(itemsss,"中华人民共和国陕西省西安市");
             charts2.addEventListener("mousedown",message);
+            charts2.showLegend(true);
+            charts2.bAnimation = true;
 
             charts3 = new OpenCharts.Chart.BarChart("canvas3");
             charts3.strTitle = "Hello My Github";
-            charts3.showLegend(false);
+            //charts3.showLegend(false);
 
             charts3.addItems(items,"北京");
             //charts3.addItems(itemss,"上海");
             //charts3.addItems(itemsss,"西安");
             charts3.addEventListener("mousedown",message);
 
+            charts4 = new OpenCharts.Chart.BarExChart("canvas4");
+            charts.bAnimation = charts1.bAnimation = charts2.bAnimation = charts3.bAnimation = charts4.bAnimation = true;
             charts.render();
             charts1.render();
             charts2.render();
             charts3.render();
+
+            items = [];
+            items.push({strCaption : '上海',data : 11461.39,itemStyle:'#002060'});
+            items.push(new OpenCharts.Item(33444.79,"北京",style));
+            items.push(new OpenCharts.Item(3261.26,"四川","#FFC000"));
+            items.push(new OpenCharts.Item(2448.86,"山西","#FFFF00"));
+            items.push(new OpenCharts.Item(1392.13,"天津","#92D050"));
+            items.push(new OpenCharts.Item(3092.94,"山东","#00B050"));
+            items.push(new OpenCharts.Item(13113.26,"广东","#00B0F0"));
+            items.push(new OpenCharts.Item(3631.0,"江苏","#0070C0"));
+            items.push(new OpenCharts.Item(1882.03,"湖北","#002060"));
+            items.push(new OpenCharts.Item(3606.78,"浙江","#7030A0"));
+            items.push(new OpenCharts.Item(1485.74,"辽宁","#C0504D"));
+            items.push(new OpenCharts.Item(1673.03,"河南","#F79646"));
+
+            charts4.strTitle = "各省市上市公司总市值";
+            //charts4.showLegend(false);
+
+            message = "${itemName}${itemCaption}的上市公司总市值为${itemData}(亿)";
+            charts4.addItems(items,"");
+            charts4.addEventListener("mousedown",message);
+
+            charts4.render();
+
+
         }
     </script>
 </head>
@@ -106,12 +135,16 @@
 <div style="left:0px;top:330px;position: absolute;">
     <canvas id="canvas1" height="300px" width="500px"  />
 </div>
-<div style="left:550px;top:0px;position: absolute;">
+<div style="left:510px;top:0px;position: absolute;">
     <canvas id="canvas2" height="300px" width="500px" left="550px" top="0xp" />
 </div>
 
-<div style="left:0550px;top:330px;position: absolute;">
+<div style="left:510px;top:330px;position: absolute;">
     <canvas id="canvas3" height="300px" width="500px" left="550px" top="330xp" position="absolute" />
+</div>
+
+<div style="left:1020px;top:0px;position: absolute;">
+    <canvas id="canvas4" height="600px" width="500px" left="1040px" top="0xp" position="absolute" />
 </div>
 </body>
 </html>
