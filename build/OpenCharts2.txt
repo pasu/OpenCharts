@@ -9,6 +9,8 @@
 ..\lib\OpenCharts\Item.js
 ..\lib\OpenCharts\RenderEnginer.js
 
+..\lib\OpenCharts\smooth.js
+
 ..\lib\OpenCharts\Charts.js
 
 ..\lib\OpenCharts\Chart\AxesChart.js
