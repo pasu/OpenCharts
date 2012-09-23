@@ -18,3 +18,5 @@
 ..\lib\OpenCharts\Chart\BarChart.js
 ..\lib\OpenCharts\Chart\BarExChart.js
 ..\lib\OpenCharts\Chart\PieChart.js
+..\lib\OpenCharts\Chart\Bar3DChart.js
+..\lib\OpenCharts\Chart\BarEx3DChart.js
