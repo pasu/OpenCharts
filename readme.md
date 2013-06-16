@@ -1,21 +1,21 @@
 ### 一、Introduce/简介
 
-OpenCharts is an OO Web Charts based on HTML5 Canvas,in this way,you can make beautiful web charts with OpenCharts project.Now ,we support eight type:Area,Bar,Line,Pie…,you can read help document where have more information and samples which you can learn how to use it.Of course,we have a lot of things to be continued,here are some ideas i think could to try: 
-1.Temporal chart& Animate chart
-2.Compound charts which can show detailed message
-3.Color table,you can simply set colors and have nice style
-4.Website,you can upload data,add charts and edit it,it can show you a list of charts which have more practical significance,you can embedded into your doc/ppt/website
-5.support OpenCharts for Java/OC version so that we can use it any platform
-6.more visual effort
+OpenCharts is an OO Web Charts based on HTML5 Canvas,in this way,you can make beautiful web charts with OpenCharts project.Now ,we support eight type:Area,Bar,Line,Pie…,you can read help document where have more information and samples which you can learn how to use it.Of course,we have a lot of things to be continued,here are some ideas i think could to try: ＜/br＞
+1.Temporal chart& Animate chart＜/br＞
+2.Compound charts which can show detailed message＜/br＞
+3.Color table,you can simply set colors and have nice style＜/br＞
+4.Website,you can upload data,add charts and edit it,it can show you a list of charts which have more practical significance,you can embedded into your doc/ppt/website＜/br＞
+5.support OpenCharts for Java/OC version so that we can use it any platform＜/br＞
+6.more visual effort＜/br＞
 
 
-OpenCharts是基于HTML Canvas技术的采用面向对象的Web图表，通过OpenCharts，你可以方便的制作一系列漂亮的Web图表。现在我们支持8种类型的图表表达方式，你可以通过帮助文档了解详细信息,也可以通过范例了解如何使用。当然还有很多未完待续的事情要来进行，下面是一些我觉得可以去做的想法：
-1.时态图表、动画图表
-2.复合图表，可以多种图表组合，表达更为详细的数据信息
-3.颜色表，通过色带的方式，方便用户对多种数据风格的指定，达到理想的风格
-4.网站，用户可以提交数据，制作和编辑图表，这样可以具有更多的实际意义，同时可以内嵌到自己的网站或文档PPT等需求
-5.支持Java OC版本，这样可以满足多种开发方式和平台的选择
-6.更多可视化效果的展现
+OpenCharts是基于HTML Canvas技术的采用面向对象的Web图表，通过OpenCharts，你可以方便的制作一系列漂亮的Web图表。现在我们支持8种类型的图表表达方式，你可以通过帮助文档了解详细信息,也可以通过范例了解如何使用。当然还有很多未完待续的事情要来进行，下面是一些我觉得可以去做的想法：＜/br＞
+1.时态图表、动画图表＜/br＞
+2.复合图表，可以多种图表组合，表达更为详细的数据信息＜/br＞
+3.颜色表，通过色带的方式，方便用户对多种数据风格的指定，达到理想的风格＜/br＞
+4.网站，用户可以提交数据，制作和编辑图表，这样可以具有更多的实际意义，同时可以内嵌到自己的网站或文档PPT等需求＜/br＞
+5.支持Java OC版本，这样可以满足多种开发方式和平台的选择＜/br＞
+6.更多可视化效果的展现＜/br＞
 
 ### 二、Show/效果展现
 
