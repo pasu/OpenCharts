@@ -22,15 +22,15 @@ OpenCharts是基于HTML Canvas技术的采用面向对象的Web图表，通过Op
 
 ### 三、How to use/使用说明
 
-see the samples folder
-参照范例效果
+see the samples folder  
+参照范例效果  
 
 ### 四、License/许可授权
 
-I disclaims copyright to this source code,just bless you can use it and give me your suggestion.
-没有许可约束，可以任意使用。
+I disclaims copyright to this source code,just bless you can use it and give me your suggestion.  
+没有许可约束，可以任意使用。  
 
 ### 五、Contact/联系
 
-Email: bjfubjfu@gmail.com
-Blog:   http://www.lugw.net/
+Email: bjfubjfu@gmail.com  
+Blog:   http://www.lugw.net/  
