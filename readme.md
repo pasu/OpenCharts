@@ -1,11 +1,8 @@
 ### 一、Introduce/简介
 
 OpenCharts is an OO Web Charts based on HTML5 Canvas,in this way,you can make beautiful web charts with OpenCharts project.Now ,we support eight type:Area,Bar,Line,Pie…,you can read help document where have more information and samples which you can learn how to use it.Of course,we have a lot of things to be continued,here are some ideas i think could to try:  
-
 1.Temporal chart& Animate chart  
-
 2.Compound charts which can show detailed message  
-
 3.Color table,you can simply set colors and have nice style＜/br＞
 4.Website,you can upload data,add charts and edit it,it can show you a list of charts which have more practical significance,you can embedded into your doc/ppt/website＜/br＞
 5.support OpenCharts for Java/OC version so that we can use it any platform＜/br＞
