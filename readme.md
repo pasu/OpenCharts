@@ -8,6 +8,7 @@ OpenCharts is an OO Web Charts based on HTML5 Canvas,in this way,you can make be
 5.support OpenCharts for Java/OC version so that we can use it any platform
 6.more visual effort
 
+
 OpenCharts是基于HTML Canvas技术的采用面向对象的Web图表，通过OpenCharts，你可以方便的制作一系列漂亮的Web图表。现在我们支持8种类型的图表表达方式，你可以通过帮助文档了解详细信息,也可以通过范例了解如何使用。当然还有很多未完待续的事情要来进行，下面是一些我觉得可以去做的想法：
 1.时态图表、动画图表
 2.复合图表，可以多种图表组合，表达更为详细的数据信息
