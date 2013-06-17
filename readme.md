@@ -4,7 +4,7 @@ OpenCharts is an OO Web Charts based on HTML5 Canvas,in this way,you can make be
 1.Temporal chart& Animate chart  
 2.Compound charts which can show detailed message  
 3.Color table,you can simply set colors and have nice style  
-4.Website,you can upload data,add charts and edit it,it can show you a list of charts which have more practical significance,you can embedded into your doc/ppt/website  
+4.
 5.support OpenCharts for Java/OC version so that we can use it any platform  
 6.more visual effort  
 
@@ -12,7 +12,7 @@ OpenCharts是基于HTML Canvas技术的采用面向对象的Web图表，通过Op
 1.时态图表、动画图表  
 2.复合图表，可以多种图表组合，表达更为详细的数据信息  
 3.颜色表，通过色带的方式，方便用户对多种数据风格的指定，达到理想的风格  
-4.网站，用户可以提交数据，制作和编辑图表，这样可以具有更多的实际意义，同时可以内嵌到自己的网站或文档PPT等需求  
+4.  
 5.支持Java OC版本，这样可以满足多种开发方式和平台的选择  
 6.更多可视化效果的展现  
 
