@@ -1,12 +1,51 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <script type="text/javascript" src="../OpenCharts-min.js"></script>
+    <script type="text/javascript" src="../lib/OpenCharts.js"></script>
     <link rel="stylesheet" href="../theme/default/style.css" type="text/css">
     <script type="text/javascript">
+        var data = [], totalPoints = 300;
+        function getRandomData() {
+
+            var style = new OpenCharts.Style();
+            style.fillStyle = "#dad81f";
+
+            if (data.length > 0)
+                data = data.slice(1);
+
+            // do a random walk
+            while (data.length < totalPoints) {
+                var prev = data.length > 0 ? data[data.length - 1].data : 50;
+                var y = prev + Math.random() * 10 - 5;
+                if (y < 0)
+                    y = 0;
+                if (y > 100)
+                    y = 100;
+                data.push(new OpenCharts.Item(y,"北京","#dad81f"));
+            }
+
+            // zip the generated y values with the x values
+            var res = [];
+            for (var i = 0; i < data.length; ++i)
+                res.push(data[i]);
+            return res;
+        }
+
+        // setup control widget
+        var updateInterval = 30;
+
+        function update() {
+            charts.cleanItems();
+            charts.addItems(getRandomData(),"");
+            charts.render();
+
+            setTimeout(update, updateInterval);
+        }
+
         function init()
         {
             var items = [],items1 = [],items2 = [],items3 = [];
+            /*
             var style = new OpenCharts.Style();
             style.fillStyle = "#F00";
 
@@ -22,17 +61,23 @@
             items.push(new OpenCharts.Item(3606.78,"浙江","#7030A0"));
             items.push(new OpenCharts.Item(1485.74,"辽宁","#C0504D"));
             items.push(new OpenCharts.Item(1673.03,"河南","#F79646"));
+             */
 
+            items = getRandomData();
             charts = new OpenCharts.Chart.LineChart("canvas");
             charts.strTitle = "各省市上市公司总市值";
             charts.showLegend(false);
-
+            charts.showLabel(false);
+            charts.setFixMaxValue(100);
             var message = "${itemName}${itemCaption}的上市公司总市值为${itemData}(亿)";
             charts.addItems(items,"");
+            charts.bAnimation = false;
+            //alert(charts.maxValue);
             charts.addEventListener("mousedown",message);
             //charts.addEventListener("mousemove",message);
 
             charts.render();
+            update();
         }
     </script>
 </head>
