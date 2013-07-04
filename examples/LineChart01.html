@@ -69,13 +69,14 @@
             charts.showLegend(false);
             charts.showLabel(false);
             charts.setFixMaxValue(100);
+            charts.coordinateStyle.bShowXAxesText = false;
             var message = "${itemName}${itemCaption}的上市公司总市值为${itemData}(亿)";
             charts.addItems(items,"");
             charts.bAnimation = false;
             //alert(charts.maxValue);
             charts.addEventListener("mousedown",message);
             //charts.addEventListener("mousemove",message);
-
+            charts.dotRadius = 0;
             charts.render();
             update();
         }

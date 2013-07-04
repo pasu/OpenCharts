@@ -5,7 +5,7 @@
 	<script type="text/javascript" src="../lib/OpenCharts.js"></script>
     <link rel="stylesheet" href="../theme/default/style.css" type="text/css">
     <script type="text/javascript">
-        var charts,charts1,charts2,charts3,charts4 ;
+        var charts,charts1,charts2,charts3,charts4,charts5 ;
         function init()
         {
             var items = [],items1 = [],items2 = [],items3 = [];
@@ -86,7 +86,7 @@
             charts2.showLegend(true);
             charts2.bAnimation = true;
 
-            charts3 = new OpenCharts.Chart.BarChart("canvas3");
+            charts3 = new OpenCharts.Chart.BarChart("canvas2");
             charts3.strTitle = "Hello My Github";
             //charts3.showLegend(false);
 
@@ -99,8 +99,14 @@
             charts.bAnimation = charts1.bAnimation = charts2.bAnimation = charts3.bAnimation = charts4.bAnimation = true;
             charts.render();
             charts1.render();
-            charts2.render();
-            charts3.render();
+            //charts2.render();
+            charts3.bAnimation = false;
+            //charts3.render();
+
+            charts5 = new OpenCharts.Chart.CompoundChart();
+            charts5.addCharts(charts3);
+            charts5.addCharts(charts2);
+            charts5.render();
 
             items = [];
             items.push({strCaption : '上海',data : 11461.39,itemStyle:'#002060'});
